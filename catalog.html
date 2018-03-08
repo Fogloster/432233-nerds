@@ -14,10 +14,12 @@
   		    <li><a class="nav-link" href="studio">СТУДИЯ</a></li>
   		    <li><a class="nav-link" href="clients">КЛИЕНТЫ</a></li>
   		    <li class="site-navigation-current"><a class="nav-link" href="#">МАГАЗИН</a></li>
-  		    <li><a class="nav-link" href="contacts">КОНТАКТЫ</a></li>
+  		    <li><a class="contacts" href="contacts">КОНТАКТЫ</a></li>
   		  </ul>
   		  <ul class="user-navigation">
-  		    <li class="login-link">Вход</li>
+  		    <li class="bucket">
+            <a class="bucket-link" href="#">Корзина</a>
+          </li>
   		  </ul>
   		  <h1 class="font-family">Магазин готовых шаблонов</h1>
   	  </nav>
@@ -28,71 +30,96 @@
         <h2 class="visually-hiden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
       </section>
-      <section class="features">
+      <section class="catalog">
         <h2 class="visually-hiden">Список товаров</h2>
-        <ul class="feature-list">
-          <li class="feature-item">
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <h3>
-              <a href="#">SEDONA информационный сайт для туристов</a> 
-            </h3>
-            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">
+                  Sedona
+                </span>
+                <span class="catalog-category">
+                  информационный сайт для туристов
+                </span>
+              </a>
+            </h3> 
+            <p class="catalog-item-price">  
               <a class="button" href="#">9 900 руб.</a>
-            </h3>
-            <p>
-              <a href="#">
-                <img src="img/sedona.jpg" width="" height="" alt="SEDONA - информационный сайт для туристов">
-              </a>
-            </p>
+            </p>  
+            <a href="#">
+              <img src="img/sedona.jpg" width="" height="" alt="SEDONA">
+            </a>
           </li>
-          <li class="feature-item">
+          <li class="catalog-item">
             <h3>
-              <a href="#">PINK</a>
-            </h3>
-            <p>
-              <a href="#">
-                <img src="img/pink.jpg" width="" height="" alt="PINK - Мобильное приложение">
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">PINK APP</span>
+                <span class="catalog-category">продуктивный лендинг приложения для iOS и Android</span>
               </a>
+            </h3>
+            <p class="catalog-item-price">
+              <a class="button" href="catalog-item.html">9 900 руб.</a>
             </p>
+            <a href="#">
+              <img src="img/pink.jpg" width="" height="" alt="PINK">
+            </a>
           </li>
-          <li class="feature-item">
+          <li class="catalog-item">
             <h3>
-              <a href="#">borodinski</a>
-            </h3>
-            <p>
-              <a href="#">
-                <img src="img/borodinski.jpg" width="" height="" alt="borodinski - Барбершоп">
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">borodinski</span>
+                <span class="catalog-category">Сайт салона красоты. Для мужчин, да</span>
               </a>
-            </p>
+            </h3>
+            <p class="catalog-item-price">
+              <a class="button" href="catalog-item.html">9 900 руб.</a>
+            </p>  
+            <a href="catalog-item.html">
+              <img src="img/borodinski.jpg" width="" height="" alt="borodinski">
+            </a>
           </li>
-          <li class="feature-item">
+          <li class="catalog-item">
             <h3>
-              <a href="#">mishki</a>
-            </h3>
-            <p>
-              <a href="#">
-                <img src="img/mishka.jpg" width="" height="" alt="mishki - магазин товаров ручной работы">
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">mishki</span>
+                <span class="catalog-category">Интернет-магазин вязанных игрушек</span>
               </a>
-            </p>
+            </h3>
+            <p class="catalog-item-price">
+              <a class="button" href="catalog-item.html">9 900 руб.</a>
+            </p>  
+            <a href="#">
+              <img src="img/mishka.jpg" width="" height="" alt="mishki">
+            </a> 
           </li>
-          <li class="feature-item">
+          <li class="catalog-item">
             <h3>
-              <a href="#">HTMLacademy</a>
-            </h3>
-            <p>
-              <a href="#">
-                <img src="img/aplus.jpg" width="" height="" alt="A+ - сайт для онлайн обучения">
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">A plus</span>
+                <span class="catalog-category">Лендинг курсов повышения квалификации</span>
               </a>
-            </p>
+            </h3>
+            <p class="catalog-item-price">
+              <a class="button" href="catalog-item.html">9 900 руб.</a>
+            </p>  
+            <a href="#">
+              <img src="img/aplus.jpg" width="" height="" alt="A+">
+            </a>
           </li>
-          <li class="feature-item">
+          <li class="catalog-item">
             <h3>
-              <a href="#">Кваст</a>
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">Кваст</span>
+                <span class="catalog-category">Промо-сайт производителя крафтового кваса</span>
+              </a>
             </h3>
             <p>
-              <a href="#">
-                <img src="img/kvast.jpg" width="" height="" alt="Кваст - Магазин крафтового пива">
-              </a>
+              <a class="button" href="catalog-item.html">9 900 руб.</a> 
             </p>
+            <a href="catalog-item.html">
+              <img src="img/kvast.jpg" width="" height="" alt="Кваст">
+            </a>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -112,7 +139,7 @@
     </main>
     <footer>
     <!-- Позже будем подключать "Гугл карты" -->
-      <section class="contacts">
+      <section class="  ">
         <h3 class="font-family">
           NЁRD'S DESING STUDIO
         </h3>
@@ -128,16 +155,17 @@
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграмм</a></li>
-          <h3 class="font-family">Давайте дружить, это выгодно!</h3>
-          <p class="font-family">Скидка 10% для друзей из социальных сетей</p>
-        </ul>
+        </ul>  
+        <h3 class="font-family">Давайте дружить, это выгодно!</h3>
+        <p class="font-family">Скидка 10% для друзей из социальных сетей</p>
       </div>
     </footer>
-    <section class="modal modal-login"> 
-      <h2 class="font-family">Личный кабинет</h2>
-      <p class="font-family">Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+    <section class="modal modal-feedback"> 
+      <h2>Напишите нам</h2>
+      <p>Ваше имя:</p>
+      <p>Ваш e-mail:</p>
+      <p>Текст письма:</p>
+      <span class="modal-button"><a href="#">Отправить</a></span>
     </section>
   </body>
 </html>

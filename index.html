@@ -77,13 +77,13 @@
      	  <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический  расчет превыше креатива. Работает не покладая рук, как роботы.</p>
        	  <p><b>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</b></p>
      	    <ul class="company-product-list">
-     		  <li class="company-product-item"><p>Веб-сайтов любой сложности</p></li>
-     		  <li class="company-product-item"><p>Мобильных приложений для IOS и Android</p></li>
-     		  <li class="company-product-item"><p>Слайдшоу и видео для корпоративных презентаций</p></li>
+     		  <li class="company-product-item">Веб-сайтов любой сложности</li>
+     		  <li class="company-product-item">Мобильных приложений для IOS и Android</li>
+     		  <li class="company-product-item">Слайдшоу и видео для корпоративных презентаций</li>
      	    </ul>
-        <a class="alt-logo">
-          <img src="img/alt-logo.jpg" width="360" height="208" alt="Логотип Нёрдс">
-  	    </a>
+          <a class="alt-logo">
+            <img src="img/alt-logo.jpg" width="360" height="208" alt="Логотип Нёрдс">
+  	      </a>
   	    <table>
   	      <caption>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</caption>
   	      <tr>
@@ -134,17 +134,33 @@
       </section>
       <div class="social">
   	    <ul>
-  	      <li><a class="social-button" href="#">Вконтакте</a></li>
-  	      <li><a class="social-button" href="#">Фейсбук</a></li>
-  	      <li><a class="social-button" href="#">Инстаграмм</a></li>
-  	      <h3 class="title-friendship">Давайте дружить, это выгодно!</h3>
-  	      <p class="text-friendship">Скидка 10% для друзей из социальных сетей</p>
-  	    </ul>
+          <li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
+          <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+          <li><a class="social-button" href="#" aria-label="Инстаграмм"></a></li>
+        </ul>  
+  	    <h3 class="title-friendship">Давайте дружить, это выгодно!</h3>
+  	    <p class="text-friendship">Скидка 10% для друзей из социальных сетей</p>
       </div>
     </footer>
-    <section class="modal modal-login">
-      <span class="modal-cart">x</span>
-      <p class="text-login">Корзина</p>
+    <section class="modal modal-feedback"> 
+      <h2 class="feedback-tip">Напишите нам</h2>
+      <span class="modal-close">x</span>
+      <form class="feedback-form" action="" method="post">
+        <div class="feedback-form-group">
+          <label for="full-name">Ваше имя:</label>
+          <input type="text" name="full-name" id="full-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="feedback-form-group">
+          <label for="e-mail">Ваш e-mail:</label>
+          <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">  
+        </div class="feedback-form-group">
+        <div class="feedback-form-group">
+          <label for="message">Текст письма:</label>
+          <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+        </div class="feedback-form-group">
+        <div class="feedback-form-group">
+        <input type="submit" class="button" value="Отправить">
+      </form>
     </section>
   </body>
 </html>

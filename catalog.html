@@ -101,10 +101,10 @@
             <a class="sorting-by-name" href="#">ПО НАЗВАНИЮ</a>
           </li>
           <li>
-            <a class="sorting-arrow-forward" href="#">стрелка-переключатель</a>
+            <a class="sorting-arrow-forward" href="#" aria-label="стрелка-переключатель"></a>
           </li>
           <li>
-            <a class="sorting-arrow-backward" href="#">стрелка-переключатель</a>
+            <a class="sorting-arrow-backward" href="#" aria-label="стрелка-переключатель"></a>
           </li>
         </ul>
         <ul class="catalog-list">
@@ -212,20 +212,33 @@
       </section>
       <div class="social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграмм</a></li>
+          <li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
+          <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+          <li><a class="social-button" href="#" aria-label="Инстаграмм"></a></li>
         </ul>  
         <h3 class="title-friendship">Давайте дружить, это выгодно!</h3>
         <p class="text-friendship">Скидка 10% для друзей из социальных сетей</p>
       </div>
     </footer>
     <section class="modal modal-feedback"> 
-      <h2>Напишите нам</h2>
-      <p>Ваше имя:</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма:</p>
-      <span class="modal-button"><a href="#">Отправить</a></span>
+      <h2 class="feedback-tip">Напишите нам</h2>
+      <span class="modal-close">x</span>
+      <form class="feedback-form" action="" method="post">
+        <div class="feedback-form-group">
+          <label for="full-name">Ваше имя:</label>
+          <input type="text" name="full-name" id="full-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="feedback-form-group">
+          <label for="e-mail">Ваш e-mail:</label>
+          <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">  
+        </div class="feedback-form-group">
+        <div class="feedback-form-group">
+          <label for="message">Текст письма:</label>
+          <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+        </div class="feedback-form-group">
+        <div class="feedback-form-group">
+        <input type="submit" class="button" value="Отправить">
+      </form>
     </section>
   </body>
 </html>

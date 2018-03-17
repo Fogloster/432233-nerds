@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс, каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
   	  <nav class="main-navigation"> 
   		  <a class="main-header-logo" href="index.html">
@@ -54,7 +57,7 @@
                 <label for="fixed">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hiden filter-input filter-input-radio" type="radio" name="product-group" value="site-layout" id="rubber">
+                <input class="visually-hiden filter-input filter-input-radio" type="radio" name="product-group" value="site-layout" id="rubber" disabled>
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
@@ -67,7 +70,7 @@
                 <label for="filter-slider-label">Слайдер</label>   
               </li>
               <li class="filter-option">
-                <input class="visually-hiden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
+                <input class="visually-hiden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block" disabled>
                 <label for="filter-advantage-block">Блок преимуществ</label> 
               </li>
               <li class="filter-option">
@@ -177,7 +180,7 @@
               </a>
             </h3>
             <p class="catalog-category">Промо-сайт производителя крафтового кваса</p>
-            <p>
+            <p class="catalog-item-price">
               <a class="button" href="#">9 900 руб.</a> 
             </p>
               <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
@@ -203,11 +206,11 @@
         <h3 class="title-company-name">
           NЁRD'S DESING STUDIO
         </h3>
-        <p class="text-adres">
+        <p class="footer-contacts">
           191186, Санкт-Петербург,</br> 
           ул. Б. Конюшенная, д.19/8 
         </p>
-        <p class="text-phone">тел. +7(812)275-75-75</p>
+        <p class="footer-phone">тел. +7(812)275-75-75</p>
         <a class="button" href="#">Напишите нам</a>
       </section>
       <div class="social">

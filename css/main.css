@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+}
+
+.inner-page {
+	color: #000000;
+     
+}
+
+.button {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+
+	background-color: #fb565a;
+	border: none;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #e74246;
+}
+
+.button:active {
+	background-color: #d7373b;
+}
+
+
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+
+	background-color: #eeeeee;
+	background-image: url("img/grey-bg.jpg");
+}
+
+.nav-list,
+.user-navigation {
+	list-style: none;
+}
+
+.nav-list a,
+.user-navigation-cart a {
+    color: #000000;
+} 
+
+.nav-list a:hover,
+.user-navigation a:hover,
+.nav-list a:focus,
+.user-navigation a:focus
+ {
+    color: #fb565a;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.feature-item {
+	text-align: center;
+}
+
+.feature-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.company-product-item {
+	list-style: none;
+}
+
+.about-us-title {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.title-company-name {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.partners-list {
+	list-style: none;
+}
+
+.social-list {
+	list-style: none;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.filter ul {
+	list-style: none;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.filter-input + label {
+	color: #b8b8b8;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+	color: #000000;
+}
+
+.filter-input:disabled + label {
+	color: #ededed;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item {
+	box-shadow: 0 0 10px rbga(0, 0, 0, 0.1); 
+}
+
+.catalog-item {
+	box-shadow: 0 0 10px rbga(0, 0, 0, 0.2);
+}
+
+.catalog-item a {
+	color: #000000;
+}
+
+.catalog-item h3 {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.catalog-category {
+	color: #666666;
+}
+
+.catalog-item-price .button{
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-list a {
+	color: #000000;
+
+	background-color: #eeeeee;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+	background-color: #dfdfdf;
+}
+
+.pagination-list a:active {
+	background-color: #d5d5d5;
+	border-top-color: 3px solid #bfbfbf;
+}
+
+.pagination-item-current a {
+	color: #000000;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.footer-contacts,
+.footer-phone {
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.modal h2 {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.feedback-form-group input[type="text"],
+.feedback-form-group textarea {
+	font: inherit;
+	color: #d7dcde;
+
+	border: 2px solid #d7dcde; 
+}
+
+.feedback-form-group input[type="text"]:focus,
+.feedback-form-group textarea:focus {
+	color: #b4b9bb;
+
+	border-color: 2px solid #b4b9bb;
+}

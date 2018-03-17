@@ -13,11 +13,6 @@ a {
 	text-decoration: none;
 }
 
-.inner-page {
-	color: #000000;
-     
-}
-
 .button {
 	font: inherit;
 
@@ -77,7 +72,7 @@ a {
 	text-align: center;
 }
 
-.feature-item h3 {
+.item-title {
 	font-size: 24px;
 	line-height: 30px;
 }
@@ -113,7 +108,7 @@ a {
 	line-height: 30px;
 }
 
-.filter ul {
+.filter-list {
 	list-style: none;
 	font-size: 16px;
 	line-height: 20px;
@@ -144,14 +139,12 @@ a {
 	box-shadow: 0 0 10px rbga(0, 0, 0, 0.2);
 }
 
-.catalog-item a {
+.catalog-item-title {
 	color: #000000;
-}
-
-.catalog-item h3 {
 	font-size: 18px;
 	line-height: 30px;
 }
+
 
 .catalog-category {
 	color: #666666;
@@ -167,29 +160,29 @@ a {
 	list-style: none;
 }
 
-.pagination-list a {
+.pagination-link {
 	color: #000000;
 
 	background-color: #eeeeee;
 }
 
-.pagination-list a:hover,
-.pagination-list a:focus {
+.pagination-link:hover,
+.pagination-link:focus {
 	background-color: #dfdfdf;
 }
 
-.pagination-list a:active {
+.pagination-link:active {
 	background-color: #d5d5d5;
 	border-top-color: 3px solid #bfbfbf;
 }
 
-.pagination-item-current a {
+.pagination-link-current {
 	color: #000000;
 }
 
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
 	color: #000000;
 
 	background-color: #ffffff;
@@ -202,17 +195,16 @@ a {
 	color: #666666;
 }
 
-.footer-social ul {
+.social-list {
 	list-style: none;
 }
 
-.modal h2 {
+.feedback-tip {
 	font-size: 45px;
 	line-height: 45px;
 }
 
-.feedback-form-group input[type="text"],
-.feedback-form-group textarea {
+.feedback-input {
 	font: inherit;
 	color: #d7dcde;
 

@@ -47,7 +47,7 @@
           </fieldset>
             <fieldset>
             <legend>СЕТКА:</legend>
-            <ul>
+            <ul class="filter-list">
               <li class="filter-option">
                 <input class="visually-hiden filter-input filter-input-radio" type="radio" name="product-group" value="site-layout" id="adaptive" checked>
                 <label for="adaptive">Адаптивная</label>
@@ -187,15 +187,15 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a class="pagination-link pagination-link-current" href="#">1</a></li>
           <li class="pagination-item">
-            <a href="#">2</a>
+            <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#">3</a>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a href="#">СЛЕДУЮЩАЯ</a>
+            <a class="pagination-link" href="#">СЛЕДУЮЩАЯ</a>
           </li>
         </ul>
       </section>
@@ -214,7 +214,7 @@
         <a class="button" href="#">Напишите нам</a>
       </section>
       <div class="social">
-        <ul>
+        <ul class="social-list">
           <li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
           <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
           <li><a class="social-button" href="#" aria-label="Инстаграмм"></a></li>
@@ -229,15 +229,15 @@
       <form class="feedback-form" action="" method="post">
         <div class="feedback-form-group">
           <label for="full-name">Ваше имя:</label>
-          <input type="text" name="full-name" id="full-name" placeholder="Имя Фамилия">
+          <input class="feedback-input" type="text" name="full-name" id="full-name" placeholder="Имя Фамилия">
         </div>
         <div class="feedback-form-group">
           <label for="e-mail">Ваш e-mail:</label>
-          <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">  
+          <input class="feedback-input" type="text" name="e-mail" id="e-mail" placeholder="email@example.com">  
         </div>
         <div class="feedback-form-group">
           <label for="message">Текст письма:</label>
-          <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+          <textarea class="feedback-input" name="message" id="message" placeholder="В свободной форме"></textarea>
         </div>
         <input type="submit" class="button" value="Отправить">
       </form>

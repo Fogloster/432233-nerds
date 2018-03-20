@@ -32,21 +32,22 @@
             <a class="shopping-cart-link" href="#">Корзина</a>
           </li>
   		  </ul>
-  		  <h1 class="title-big">Магазин готовых шаблонов</h1>
+        <h1 class="title-big">Магазин готовых шаблонов</h1>
   	  </nav>
     </header>
-    <main>
+    <main class="container">
+      <div class="catalog-columns">
       <section class="filsters">
         <h2 class="visually-hiden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="cost-form">
-            <legend class="filter-legend">СТОИМОСТЬ:</legend>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-legend-cost">СТОИМОСТЬ:</legend>
             <span class="grey-cost-form">0</span>
             <input class="visually-hiden" type="range" id="cost-product" name="cost-product"></input>
             до <span class="grey-cost-form">15 000</span>
           </fieldset>
-            <fieldset>
-            <legend class="filter-legend">СЕТКА:</legend>
+            <fieldset class="filter-fieldset">
+            <legend class="filter-legend-grid">СЕТКА:</legend>
             <ul class="filter-list">
               <li class="filter-option">
                 <input class="visually-hiden filter-input filter-input-radio" type="radio" name="product-group" value="site-layout" id="adaptive" checked>
@@ -62,7 +63,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-fieldset">
             <legend class="filter-legend">Особенности:</legend>
             <ul>
               <li class="filter-option">
@@ -199,10 +200,11 @@
           </li>
         </ul>
       </section>
+      </div>
     </main>
-    <footer>
+     <footer class="main-footer">
     <!-- Позже будем подключать "Гугл карты" -->
-      <section class="adres">
+      <section class="contacts">
         <h3 class="title-company-name">
           NЁRD'S DESING STUDIO
         </h3>
@@ -214,14 +216,30 @@
         <a class="button" href="#">Напишите нам</a>
       </section>
       <div class="social">
+        <div class="container">
         <ul class="social-list">
-          <li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
-          <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
-          <li><a class="social-button" href="#" aria-label="Инстаграмм"></a></li>
-        </ul>  
-        <h3 class="title-friendship">Давайте дружить, это выгодно!</h3>
-        <p class="text-friendship">Скидка 10% для друзей из социальных сетей</p>
+          <li>
+            <a class="social-button" href="#" aria-label="Вконтакте">
+              <img class="social-pic" src="img/vk-icon.svg">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#" aria-label="Фейсбук">
+              <img src="img/fb-icon.svg">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#" aria-label="Инстаграмм">
+              <img src="img/insta-icon.svg">
+            </a>
+          </li>
+        </ul>
+        <div class="friendship-block">  
+          <h3 class="title-friendship">Давайте дружить, это выгодно!</h3>
+          <p class="text-friendship">Скидка 10% для друзей из социальных сетей</p>
+        </div>
       </div>
+    </div>
     </footer>
     <section class="modal modal-feedback"> 
       <h2 class="feedback-tip">Напишите нам</h2>
@@ -232,7 +250,7 @@
           <input class="feedback-input" type="text" name="full-name" id="full-name" placeholder="Имя Фамилия">
         </div>
         <div class="feedback-form-group">
-          <label class="feedback-label" for="e-mail">Ваш e-mail:</label>
+          <label for="e-mail">Ваш e-mail:</label>
           <input class="feedback-input" type="text" name="e-mail" id="e-mail" placeholder="email@example.com">  
         </div>
         <div class="feedback-form-group">

@@ -14,13 +14,12 @@ a {
 }
 
 .button {
-	font: inherit;
-
-	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
 	text-transform: uppercase;
-
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
 
 	background-color: #fb565a;
 	border: none;
@@ -33,10 +32,14 @@ a {
 
 .button:active {
 	background-color: #d7373b;
+
+	color: #e37376;
 }
 
 .main-header {
-	margin-bottom: 38px;
+	margin-bottom: 80px;
+
+	background-color: #eeeeee;
 }
 
 .main-header-logo {
@@ -44,60 +47,70 @@ a {
 	height: 64px;
 }
 
-.main-navigation {
-    display: flex;
-    align-items: center;
-
+.main-navigation,
+.user-cart-link {
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 500;
-
-	background-color: #eeeeee;
-	background-image: url("img/grey-bg.jpg");
 }
 
-.main-navigation-wrapper {
+.main-header-wrapper {
 	width: 100%;
 	margin-bottom: 40px;
 
 	background-color: #eeeeee;
 }
 
-.main-navigation-wrapper .container {
+.main-header-wrapper {
 	display: flex;
 	justify-content: space-between;
 }
 
 
-.user-navigation {
+.user-cart-list {
 	width: 160px;
 	margin: 0;
 	padding: 0;
 }
 
 
+.nav-list {
+    width: 440px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
 .nav-list,
-.user-navigation {
+.user-cart-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
 .nav-link,
-.shoping-cart-link {
+.user-cart-link {
     color: #000000;
 } 
 
-.nav-link {
-	width: 440px;
-}
-
 .nav-link:hover,
-.shoping-cart-link:hover,
+.user-cart-link:hover,
 .nav-link:focus,
-.shoping-cart-link:focus
+.user-cart-link:focus
  {
     color: #fb565a;
+}
+
+.slide-title {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+
+.slide-text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
 }
 
 .container {
@@ -106,21 +119,13 @@ a {
 	padding: 0 10px;
 }
 
-.slider-block {
-	margin: 0;
-	padding: 0;
-
-	list-style: none;
-
-}
-
 .features {
 	margin-bottom: 80px;
 }
 
 .features-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin: 0;
 	padding: 0;
 
@@ -129,18 +134,23 @@ a {
 
 .feature-item {
 	width: 300px;
-	text-align: center;
 }
 
 .item-title {
 	font-size: 24px;
 	line-height: 30px;
+	font-weight: 700
+}
+
+.item-text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
 }
 
 .about-us {
 	display: flex;
 	justify-content: space-between;
-	margin: 0;
 	padding-top: 40px;
 }
 
@@ -152,14 +162,28 @@ a {
 	width: 360px;
 }
 
-
-.company-product-item {
-	list-style: none;
-}
-
 .about-us-title {
 	font-size: 45px;
-	line-height: 45px;
+    line-height: 45px;
+	font-weight: 500;
+}
+
+.about-us-text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+
+.company-product-list {
+	list-style: none;
+
+}
+
+.company-product-item {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
 }
 
 .title-company-name {

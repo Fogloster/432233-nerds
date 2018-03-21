@@ -9,12 +9,12 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <div class="main-navigation-wrapper">
-          <div class="container">
-  	        <a class="main-header-logo">
-              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-  	        </a>
+      <div class="container">
+        <div class="main-header-wrapper">
+          <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+          </a>
+          <nav class="main-navigation">
   	        <ul class="nav-list">
   	          <li class="nav-item">
   	      	    <a class="nav-link" href="#">СТУДИЯ</a>
@@ -29,54 +29,57 @@
   		  	      <a class="nav-link" href="#">КОНТАКТЫ</a>
   		        </li>
   	        </ul>
-  	        <ul class="user-navigation">
-  	          <li class="user-navigation-cart">
-  	            <a class="user-navigation-cart-link" href="#">Корзина</a>
-  	          </li>
-  	        </ul>
-          </div>
+      	  </nav>
+          <ul class="user-cart-list">
+            <li class="user-cart-item">
+              <a class="user-cart-link" href="#">КОРЗИНА</a>
+            </li>
+          </ul>
         </div>
-  	  </nav>
+        <section class="slider-block">
+          <div class="slider">
+              <!-- Первый слайд -->
+              <h3 class="slide-title">Долго, дорого, скрупулезно.</h3>
+            <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+            <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+          <div class="slider">
+              <!-- Второй слайд -->
+            <h3 class="slide-title">Любим математику<br> как никто другой</h3>
+            <p class="slide-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+            <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+          <div class="slider">
+            <!-- Третий слайд -->
+            <h3 class="slide-title">Только ночь,<br> только хардкор</h3>
+            <p class="slide-text">Работать днем, как все? Мы против этого<br> Ближе к полуночи работа только начинается.</p>
+            <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+        </section> 
+      </div>  
     </header>
     <main class="container">
-      <section class="slider-block">
-        <div class="slider">
-      	  <!-- Первый слайд -->
-      	  <h3 class="slide-title">Долго, дорого, скрупулезно.</h3>
-  		  <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
-  		  <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
-  		</div>
-  		<div class="slider">
-          <!-- Второй слайд -->
-  		  <h3 class="slide-title">Любим математику<br> как никто другой</h3>
-  		  <p class="slide-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
-  		  <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
-  		</div>
-  		<div class="slider">
-  		  <!-- Третий слайд -->
-  		  <h3 class="slide-title">Только ночь,<br> только хардкор</h3>
-  		  <p class="slide-text">Работать днем, как все? Мы против этого<br> Ближе к полуночи работа только начинается.</p>
-  		  <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
-      	</div>
-      </section>
       <section class="features">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="features-list">
           <li class="features-item">
-     	    <h3 class="item-title">ВЕБ-САЙТЫ</h3>
-     	    <p>Мир никогда не будет прежним</p>
-     	    <a class="button" href="#">Заказать</a>
-     	  </li>
-     	  <li class="features-item">
-     	    <h3 class="item-title">ПРИЛОЖЕНИЯ</h3>
-     	    <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-     	    <a class="button" href="#">Заказать</a>
-     	  </li>
-     	  <li class="features-item">
-     	    <h3 class="item-title">ПРЕЗЕНТАЦИИ</h3>
-     	    <p>Вы даже не подозревате, насколько вы изумительны!</p>	
-     	    <a class="button" href="#">Заказать</a>
-     	  </li>
+            <img class="features-item-img" src="img/notebook-website-red.jpg">
+       	    <h3 class="item-title">ВЕБ-САЙТЫ</h3>
+       	    <p class="item-text">Мир никогда не будет прежним</p>
+       	    <a class="button" href="#">Заказать</a>
+       	  </li>
+       	  <li class="features-item">
+            <img class="features-item-img" src="img/mobile-app-green.jpg">
+       	    <h3 class="item-title">ПРИЛОЖЕНИЯ</h3>
+       	    <p class="item-text">Покорите топ-10 приложений <br>в AppStore и Google Play</p>
+       	    <a class="button" href="#">Заказать</a>
+       	  </li>
+       	  <li class="features-item">
+            <img class="features-item-img" src="img/presentation-yellow.jpg">
+       	    <h3 class="item-title">ПРЕЗЕНТАЦИИ</h3>
+       	    <p class="item-text">Вы даже не подозревате,<br> насколько вы изумительны!</p>	
+       	    <a class="button" href="#">Заказать</a>
+       	  </li>
         </ul>
       </section> 
       <section class="about-us">
@@ -106,7 +109,6 @@
          </div> 
       </section>
       <section class="partners">
-        <div class="container"></div>
         <ul class="partners-list">
           <li class="partners-item">
             <a href="https://htmlacademy.ru/intensive/htmlcss">

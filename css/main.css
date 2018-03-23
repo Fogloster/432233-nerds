@@ -13,6 +13,20 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
 .button {
 	color: #ffffff;
 	vertical-align: middle;
@@ -45,6 +59,16 @@ a {
 .main-header-logo {
 	width: 160px;
 	height: 64px;
+}
+
+.nerds-logo-filter:hover {
+	filter: opacity(80%);
+
+}
+
+.nerds-logo-filter:active {
+	filter: opacity(30%);
+
 }
 
 .main-navigation,
@@ -105,18 +129,16 @@ a {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
+
+	margin-bottom: 30px;
 }
 
 .slide-text {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
-}
 
-.container {
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0 10px;
+	margin-bottom: 45px;
 }
 
 .features {
@@ -151,7 +173,8 @@ a {
 .about-us {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 40px;
+
+	margin-bottom: 80px;
 }
 
 .about-us-block {
@@ -186,18 +209,68 @@ a {
 	font-weight: 400;
 }
 
+.alt-logo-img {
+	margin-bottom: 35px;
+}
+
 .title-company-name {
 	font-size: 18px;
 	line-height: 30px;
+	font-weight: 700;
+}
+
+.caption-title {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+
+	width: 333px;
+
+	margin-bottom: 50px;
+}
+
+.table-bold {
+	font-size: 45px;
+	line-height: 10px;
+	font-weight: 700;
+
+	vertical-align: top;
+
+	padding-bottom: 25px;
+}
+
+.table-regular {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.little-persent {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 700;
+
+	vertical-align: text-top;
 }
 
 .partners-list {
-	min-width: 1160px;
     display: flex;
 	justify-content: space-between;
 	margin-bottom: 80px;
 
 	list-style: none;
+}
+
+.partners-item-link{
+  filter: opacity(20%);
+}
+
+.partners-item-link:hover {
+	filter: opacity(100%);
+}
+
+.partners-item-link:active {
+	filter: opacity(10%);
 }
 
 .contacts {
@@ -314,22 +387,42 @@ a {
 	background-color: #ffffff;
 }
 
+.map-img {
+	text-align: center;
+}
+
 .footer-contacts,
 .footer-phone {
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: 400;
 	color: #666666;
 }
 
-
-.social .container {
+.social {
 	display: flex;
 	justify-content: space-between;
- 
 }
 
 .social-list {
 	list-style: none;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-friendship {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+
+	margin-bottom: 15px;
+}
+
+.text-friendship {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
 }
 
 /*Временный стиль*/
@@ -342,15 +435,36 @@ a {
 	line-height: 45px;
 }
 
+.feedback-form-group {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
 .feedback-input {
-	font: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
 	color: #d7dcde;
 
 	border: 2px solid #d7dcde; 
 }
 
-.feedback-input:focus {
+.feedback-input:hover {
 	color: #b4b9bb;
 
-	border-color: 2px solid #b4b9bb;
+	border: 2px solid #b4b9bb;
 }
+
+.feedback-input:focus {
+	color: #000000;
+
+	border: 2px solid #000000;
+}
+
+.feedback-ipnut:invalid {
+	color: #e74246;
+
+	border: 2px solid #e74246;
+}
+

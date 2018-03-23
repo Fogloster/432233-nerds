@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="container">
         <div class="main-header-wrapper">
-          <a class="main-header-logo">
+          <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
           </a>
           <nav class="main-navigation">
@@ -207,7 +207,9 @@
       </div>
     </main>
     <footer class="main-footer">
-    <!-- Позже будем подключать "Гугл карты" -->
+      <p class="map-img">
+        <img class="map" src="img/map-marker.jpg" width="1440" height="420">
+      </p>
       <section class="contacts">
         <h3 class="title-company-name">
           NЁRD'S DESING STUDIO
@@ -219,15 +221,30 @@
         <p class="footer-phone">тел. +7(812)275-75-75</p>
         <a class="button" href="#">Напишите нам</a>
       </section>
-      <div class="social">
-        <div class="container">
+      <div class="container">
+        <div class="social">  
           <ul class="social-list">
-            <li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
-            <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
-            <li><a class="social-button" href="#" aria-label="Инстаграмм"></a></li>
-          </ul>  
-          <h3 class="title-friendship">Давайте дружить, это выгодно!</h3>
-          <p class="text-friendship">Скидка 10% для друзей из социальных сетей</p>
+            <li>
+              <a class="social-button" href="#" aria-label="Вконтакте">
+                <img src="">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#" aria-label="Фейсбук">
+                <img src="">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#" aria-label="Инстаграмм">
+                <img src="">
+              </a>
+            </li>
+          </ul>
+          <div class="friendship-block">  
+            <h3 class="title-friendship">Давайте дружить, это выгодно!</h3>
+            <p class="text-friendship">Скидка 10% для друзей из социальных сетей</p>
+          </div>
+        </div>
       </div>
     </footer>
     <section class="modal modal-feedback"> 
@@ -235,7 +252,7 @@
       <span class="modal-close">x</span>
       <form class="feedback-form" action="" method="post">
         <div class="feedback-form-group">
-          <label class="feedback-label" for="full-name">Ваше имя:</label>
+          <label for="full-name">Ваше имя:</label>
           <input class="feedback-input" type="text" name="full-name" id="full-name" placeholder="Имя Фамилия">
         </div>
         <div class="feedback-form-group">

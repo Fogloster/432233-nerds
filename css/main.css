@@ -390,9 +390,9 @@ a {
 	background-color: #ffffff;
 }
 
-/*.map-img {
-	text-align: center;
-}*/
+.map-img {
+	margin-left: 250px;
+}
 
 .footer-contacts,
 .footer-phone {

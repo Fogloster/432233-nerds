@@ -125,6 +125,10 @@ a {
     color: #fb565a;
 }
 
+.active-link:active {
+    color: #000000;
+}
+
 .slide-title {
 	font-size: 55px;
 	line-height: 55px;
@@ -147,24 +151,26 @@ a {
 
 .features-list {
 	display: flex;
-	justify-content: space-around;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
 }
 
-.feature-item {
+.features-item {
 	width: 300px;
+
+	margin-right: 100px;
 }
 
-.item-title {
+
+.features-item-title {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700
 }
 
-.item-text {
+.features-item-text {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -224,19 +230,16 @@ a {
 	line-height: 24px;
 	font-weight: 700;
 
-	width: 333px;
+	/*width: 333px;*/
 
 	margin-bottom: 50px;
+	text-align: left;
 }
 
 .table-bold {
 	font-size: 45px;
-	line-height: 10px;
+	line-height: 45px;
 	font-weight: 700;
-
-	vertical-align: top;
-
-	padding-bottom: 25px;
 }
 
 .table-regular {
@@ -246,8 +249,8 @@ a {
 }
 
 .little-persent {
-	font-size: 16px;
-	line-height: 16px;
+	font-size: 28px;
+	line-height: 28px;
 	font-weight: 700;
 
 	vertical-align: text-top;
@@ -387,9 +390,9 @@ a {
 	background-color: #ffffff;
 }
 
-.map-img {
+/*.map-img {
 	text-align: center;
-}
+}*/
 
 .footer-contacts,
 .footer-phone {
@@ -401,7 +404,7 @@ a {
 
 .social {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .social-list {

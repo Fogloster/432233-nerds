@@ -28,24 +28,19 @@ a {
 }
 
 .button {
-	display: block;
-	width: 240px;
-	padding: 13px 0;
+	padding: 15px 55px;
 
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
-	text-align: center;
 	text-transform: uppercase;
-	text-decoration: none;
 
 	background-color: #fb565a;
 	border: none;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
 	background-color: #e74246;
 }
 
@@ -101,7 +96,7 @@ a {
 	content: "";
 
     position: absolute;
-    top: 1px;
+    top: 5px;
     left: 14px;
 
 	width: 16px;
@@ -125,7 +120,7 @@ a {
 }
 
 .inner-page .main-header-wrapper {
-	padding-bottom: 80px
+	padding-bottom: 80px;
 }
 
 .user-cart-list {
@@ -151,15 +146,21 @@ a {
 
 .nav-link,
 .user-cart-link {
+	display: inline-block;
+	padding-bottom: 10px;
     color: #000000;
 } 
 
 .nav-link:hover,
-.user-cart-link:hover,
-.nav-link:focus,
-.user-cart-link:focus
- {
+.user-cart-link:hover
+/*.nav-link:focus,*/
+/*.user-cart-link:focus*/ {
     color: #fb565a;
+}
+
+.nav-link:active,
+.user-cart-link:active {
+	filter: opacity(30%);
 }
 
 .site-navigation-current {
@@ -177,10 +178,6 @@ a {
 	height: 3px;
 
 	background-color: #fb565a;
-}
-
-.active-link:active {
-    color: #000000;
 }
 
 .slider-block {
@@ -318,6 +315,8 @@ a {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
+
+	margin-bottom: 45px;
 }
 
 .features {
@@ -349,10 +348,8 @@ a {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
-}
 
-.features-item-btn {
-	width: 160px;
+	margin-bottom: 30px;
 }
 
 .features-green-btn {
@@ -360,7 +357,7 @@ a {
 }
 
 .features-green-btn:hover,
-.feature-green-btn:active {
+.feature-green-btn:focus {
 	background-color: #00bc6c;
 }
 
@@ -373,7 +370,6 @@ a {
 	background-color: #eab534;
 }
 
-
 .about-us {
 	display: flex;
 	justify-content: space-between;
@@ -382,7 +378,7 @@ a {
 }
 
 .about-us-block {
-/*	width: 660px;*/
+	width: 660px;
 }
 
 .about-us-advartise {
@@ -477,7 +473,7 @@ a {
 	border-bottom: 1px solid #d1d1d1;
 }
 
-.partners-item-link{
+.partners-item-link {
     filter: opacity(20%);
 }
 
@@ -808,11 +804,21 @@ a {
 	line-height: 18px;
     font-weight: 400; 
 
-	color: #b2b2b2;
+    color: #000000;
+
+    filter: opacity(20%);
+}
+
+.sorting-link:hover {
+	filter: opacity(60%);
+}
+
+.sorting-link:active {
+	filter: opacity(100%);
 }
 
 .sorting-link-current {
-	color: #000000;
+    filter: opacity(100%);
 }
 
 .catalog {
@@ -830,6 +836,8 @@ a {
 }
 
 .catalog-item {
+    position: relative;
+
 	width: 360px;
 	margin-bottom: 35px;
 	margin-right: 40px;
@@ -837,17 +845,64 @@ a {
 	box-shadow: 0 0 10px rbga(0, 0, 0, 0.1); 
 }
 
+.catalog-item-browser {
+	margin-bottom: -10px;
+	filter: opacity(12%);
+}
+
+
+.catalog-item-block {
+	position: absolute;
+
+	height: 230px;
+	width: 360px;
+
+	top: 380px;
+
+	background-color: #eeeeee;  
+    
+    display: none;
+}
+
+.catalog-item:hover .catalog-item-block {
+	display: block;
+}
+.catalog-item:hover .catalog-item-browser {
+	filter: opacity(100%);
+}
+
+.pic-wrapper {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
 .catalog-item-title {
 	color: #000000;
 	font-size: 18px;
 	line-height: 30px;
+	text-transform: uppercase;
+	text-align: center;
+
+	margin-top: 30px;
 }
 
 .catalog-category {
 	color: #666666;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+
+	text-align: center;
+
+	margin-bottom: 30px;
 }
 
-.catalog-item-price .button{
+.catalog-item-button {
+	margin-left: 80px;
+}
+
+.catalog-item-price{
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
@@ -874,11 +929,8 @@ a {
 
 .pagination-link {
 	display: block;
-	width: 50px;
-	height: 50px;
 	color: #000000;
-	line-height: 50px;
-	text-align: center;
+	padding: 15px 20px;
 
 	background-color: #eeeeee;
 }
@@ -889,14 +941,16 @@ a {
 }
 
 .pagination-link:active {
+	padding-top: 13px;
 	background-color: #d5d5d5;
-	border-top-color: 3px solid #bfbfbf;
+	border-top: 2px solid #bfbfbf;
 }
 
 .pagination-link-current {
 	color: #000000;
-
+    padding: 13px 20px;
 	border: 2px solid #a6a6a6;
+	background-color: #ffffff;
 }
 
 .pagination-link-current:hover,
@@ -955,7 +1009,7 @@ a {
 
 .footer-button {
 	margin-left: 50px;
-	width: 220px;
+	padding: 15px 45px;
 }
 
 .social {

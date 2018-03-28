@@ -111,7 +111,6 @@
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Список товаров</h2>
-         <!--  <h3 class="sorting-title">СОРТИРОВАТЬ:</h3> -->
           <ul class="sorting-list">
             <li class="sorting-item">
               <span class="sorting-title" href="#">Сортировать:</span>
@@ -126,7 +125,7 @@
               <a class="sorting-link" href="#">По названию</a>
             </li>
             <li class="sorting-item"> 
-              <a class="sorting-link arrow-forward" href="#" aria-label="стрелка-переключатель">
+              <a class="sorting-link sorting-link-current arrow-forward" href="#" aria-label="стрелка-переключатель">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
               </a>
             </li>
@@ -138,77 +137,95 @@
           </ul>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <h3>
-                <a class="catalog-item-title" href="#">
-                  Sedona
-                </a>
-              </h3>
-              <p class="catalog-category">
-                информационный сайт для туристов
+              <div class="catalog-item-block">
+                <h3 class="catalog-item-title">
+                  <a class="catalog-item-link" href="#">
+                    Sedona
+                  </a>
+                </h3>
+                <p class="catalog-category">
+                  информационный сайт<br> для туристов
+                </p>
+                <a class="button catalog-item-button" href="#">9 900 руб.</a>
+              </div> 
+              <p class="pic-wrapper">
+                <img class="catalog-item-browser" src="img/browser-border.png" width="360" height="40">
               </p>
-              <p class="catalog-item-price">  
-                <a class="button" href="#">9 900 руб.</a>
-              </p>  
               <img src="img/sedona.jpg" width="360" height="576" alt="SEDONA">
             </li>
             <li class="catalog-item">
-              <h3>
-                <a class="catalog-item-title" href="#">
-                  PINK APP
-                </a>
-              </h3>
-              <p class="catalog-category">продуктивный лендинг приложения для iOS и Android</p>
-              <p class="catalog-item-price">
-                <a class="button" href="#">9 900 руб.</a>
-              </p>
+              <div class="catalog-item-block">
+                <h3 class="catalog-item-title">
+                  <a class="catalog-item-link" href="#">
+                    PINK APP
+                  </a>
+                </h3>
+                <p class="catalog-category">продуктивный лендинг<br> приложения для iOS и Android</p>
+                <p class="catalog-item-price">
+                  <a class="button catalog-item-button" href="#">9 900 руб.</a>
+                </p>
+              </div>
+              <img class="catalog-item-browser" src="img/browser-border.png" width="360" height="40">
               <img src="img/pink.jpg" width="360" height="576" alt="PINK">
             </li>
             <li class="catalog-item">
-              <h3>
-                <a class="catalog-item-title" href="#">
-                  borodinski
-                </a>
-              </h3>  
-              <p class="catalog-category">Сайт салона красоты. Для мужчин, да</p>
-              <p class="catalog-item-price">
-                <a class="button" href="#">9 900 руб.</a>
-              </p>  
+              <div class="catalog-item-block">
+                <h3 class="catalog-item-title">
+                  <a class="catalog-item-link" href="#">
+                    borodinski
+                  </a>
+                </h3>  
+                <p class="catalog-category">Сайт салона красоты.<br> Для мужчин, да</p>
+                <p class="catalog-item-price">
+                  <a class="button catalog-item-button" href="#">9 900 руб.</a>
+                </p> 
+              </div> 
+              <img class="catalog-item-browser" src="img/browser-border.png" width="360" height="40">
               <img src="img/borodinski.jpg" width="360" height="576" alt="borodinski">
             </li>
             <li class="catalog-item">
-              <h3>
-                <a class="catalog-item-title" href="#">
-                  Mishki
-                </a>
-              </h3>  
-              <p class="catalog-category">Интернет-магазин вязанных игрушек</p>
-              <p class="catalog-item-price">
-                <a class="button" href="#">9 900 руб.</a>
-              </p>  
+              <div class="catalog-item-block">
+                <h3 class="catalog-item-title">
+                  <a class="catalog-item-link" href="#">
+                    Mishki
+                  </a>
+                </h3>
+                <p class="catalog-category">Интернет-магазин<br> вязанных игрушек</p>
+                <p class="catalog-item-price">
+                  <a class="button catalog-item-button" href="#">9 900 руб.</a>
+                </p>
+              </div>
+              <img class="catalog-item-browser" src="img/browser-border.png" width="360" height="40">  
               <img src="img/mishka.jpg" width="360" height="576" alt="mishki">
             </li>
             <li class="catalog-item">
-              <h3>
-                <a class="catalog-item-title" href="#">
-                  A plus
-                </a>
-              </h3>
-              <p class="catalog-category">Лендинг курсов повышения квалификации</p>
-              <p class="catalog-item-price">
-                <a class="button" href="#">9 900 руб.</a>
-              </p>  
+              <div class="catalog-item-block">
+                <h3 class="catalog-item-title">
+                  <a class="catalog-item-link" href="#">
+                    A plus
+                  </a>
+                </h3>
+                <p class="catalog-category">Лендинг курсов повышения<br> квалификации</p>
+                <p class="catalog-item-price">
+                  <a class="button catalog-item-button" href="#">9 900 руб.</a>
+                </p> 
+              </div>
+              <img class="catalog-item-browser" src="img/browser-border.png" width="360" height="40"> 
               <img src="img/aplus.jpg" width="360" height="576" alt="A+">
             </li>
             <li class="catalog-item">
-              <h3>
-                <a class="catalog-item-title" href="#">
-                  Кваст
-                </a>
-              </h3>
-              <p class="catalog-category">Промо-сайт производителя крафтового кваса</p>
-              <p class="catalog-item-price">
-                <a class="button" href="#">9 900 руб.</a> 
-              </p>
+              <div class="catalog-item-block">
+                <h3 class="catalog-item-title">
+                  <a class="catalog-item-link" href="#">
+                    Кваст
+                  </a>
+                </h3>
+                <p class="catalog-category">Промо-сайт производителя<br> крафтового кваса</p>
+                <p class="catalog-item-price">
+                  <a class="button catalog-item-button" href="#">9 900 руб.</a> 
+                </p>
+              </div>
+              <img class="catalog-item-browser" src="img/browser-border.png" width="360" height="40">
               <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
             </li>
           </ul>

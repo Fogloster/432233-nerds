@@ -23,6 +23,11 @@ body {
 	padding: 0 20px;
 }
 
+/*.main-container {
+	margin: 0;
+	padding: 0;
+}*/
+
 .button {
 	padding: 15px 55px;
 
@@ -1257,37 +1262,32 @@ body {
 	height: 3px;
 
 	background-color: #fb565a;
-	filter: opacity(30%);
 	-webkit-filter: opacity(30%);
-	        
+	        filter: opacity(30%);
 }
 
 .modal-close:hover::before,
 .modal-close:hover::after {
-	filter: opacity(100%);
 	-webkit-filter: opacity(100%);
-	        
+	        filter: opacity(100%);
 }
 
 .modal-close:active::before,
 .modal-close:active::after {
-	filter: opacity(10%);
 	-webkit-filter: opacity(10%);
-	        
+	        filter: opacity(10%);
 }
 
 .modal-close:before {
-	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	        
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .modal-close:after {
-	transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	        
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 }
 
 .modal-feedback-tip {

@@ -896,6 +896,7 @@ body {
   position: relative;
 
   width: 360px;
+
   margin-bottom: 35px;
   margin-right: 40px;
 
@@ -916,8 +917,8 @@ body {
   position: absolute;
 
   width: 360px;
-  top: 380px;
-
+  bottom: 0;
+  
   padding-bottom: 45px;
 
   background-color: #eeeeee; 
@@ -928,7 +929,6 @@ body {
 
 .catalog-item:hover .catalog-item-block {
   display: block;
-  z-index: 2;
 }
 .catalog-item:hover .catalog-item-browser {
   filter: opacity(100%);

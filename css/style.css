@@ -25,7 +25,6 @@ body {
 
 .button {
   padding: 15px 55px;
-  display: inline-block;
   text-align: center;
 
   color: #ffffff;
@@ -52,6 +51,7 @@ body {
 }
 
 .main-header {
+  min-width: 1440px;
   margin-bottom: 80px;
 
   background-color: #eeeeee;
@@ -239,7 +239,8 @@ body {
 
 .slider-item {
   display: none;
-  padding: 78px 0px 0;
+  padding-top: 78px;
+  padding-bottom: 55px;
 }
 
 .slider-item:nth-child(1) {	
@@ -308,6 +309,14 @@ body {
   margin-bottom: 45px;
 }
 
+.slider-item-button {
+  margin-bottom: 80px;
+}
+
+.main-content-container {
+  min-width: 1440px;
+}
+
 .features {
   margin-bottom: 80px;
 }
@@ -332,9 +341,8 @@ body {
 }
 
 .features-item-img {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
-
 
 .features-item-title {
   font-size: 24px;
@@ -408,7 +416,7 @@ body {
 
   margin: 0;
   margin-bottom: 35px;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .about-us-text {
@@ -483,6 +491,8 @@ body {
   line-height: 54px;
   font-weight: 700;
   text-align: left;
+  padding-bottom: 25px;
+
 }
 
 .table-regular {
@@ -907,11 +917,14 @@ body {
   margin-right: 0;
 }
 
+.catalog-item img {
+  display: block;
+}
+
 .catalog-item-browser {
   margin-bottom: -10px;
   filter: opacity(12%);
 }
-
 
 .catalog-item-block {
   position: absolute;
@@ -963,6 +976,8 @@ body {
   text-align: center;
 
   margin-bottom: 30px;
+  padding-left: 65px;
+  padding-right: 65px;
 }
 
 .catalog-item-button {
@@ -1000,6 +1015,7 @@ body {
   padding: 15px 20px;
 
   background-color: #eeeeee;
+  border-radius: 5%;
   text-decoration: none;
 }
 
@@ -1028,6 +1044,11 @@ body {
   background-color: #ffffff;
 }
 
+.pagination-link-next {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .map {
   width: 1440px;
   margin: 0 auto;
@@ -1042,11 +1063,14 @@ body {
   position: absolute;
  
   width: 320px;
-  height: 307px;
   top: 55px;
   left: 140px;
 
   background-color: #ffffff;
+}
+
+.main-footer {
+  min-width: 1440px;
 }
 
 .footer-title-company-name {
@@ -1059,7 +1083,6 @@ body {
   margin-bottom: 30px;
   padding-left: 50px;
 }
-
 
 .footer-contacts,
 .footer-phone {
@@ -1074,6 +1097,7 @@ body {
 
 .footer-contacts {
   margin-bottom: 15px;
+  max-width: 200px;
 }
 
 .footer-phone {
@@ -1082,6 +1106,7 @@ body {
 
 .footer-button {
   margin-left: 50px;
+  margin-bottom: 50px;
   padding: 15px 45px;
 }
 

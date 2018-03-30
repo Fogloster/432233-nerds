@@ -928,6 +928,7 @@ body {
 
 .catalog-item:hover .catalog-item-block {
   display: block;
+  z-index: 2;
 }
 .catalog-item:hover .catalog-item-browser {
   filter: opacity(100%);

@@ -846,7 +846,7 @@ opacity: 0.3;
   opacity: 0.4;
 } 
 
-.filter-input:checked + .filter-option-label:hover::after {
+.filter-input-radio:checked + .filter-option-label:hover::after {
   opacity: 1;
 }
 
@@ -1133,7 +1133,7 @@ opacity: 0.3;
  
   width: 320px;
   top: 50px;
-  left: 90px;
+  left: 20px;
 
   background-color: #ffffff;
   z-index: 2;
